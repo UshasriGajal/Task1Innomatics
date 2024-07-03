@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    align-items: center;
+}
+.toast-checkbox{
+    display: none;
+}
+.toast{
+    visibility: none;
+    opacity: 0;
+    display: block;
+   
+    border: 1px solid ;
+    border-radius: 5px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    right: 0%;
+    top: 10px;
+    /* transform: translateX(-50%); */
+    transition: visibility 0s linear 0.5s opacity 0.5s linear;
+}
+.toast-checkbox:checked ~ .toast{
+    visibility: visible;
+    opacity: 1;
+    transition-delay:0s,0s;
+}
+.Notification{
+    position: relative;
+    right: 0;
+    border-radius: 20px;
+    min-width: 250px;
+    padding: 10px;
+    background-color: blueviolet;
+    margin: 10px;
+    border: 1px solid black;
+}
+.close_toast{
+    position: absolute;
+    top: 0px;
+    color: yellow;
+    right: 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
+.close_toasts{
+    position: absolute;
+    top: 0px;
+    color: yellow;
+    right: 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
+.show-toast{
+    cursor: pointer;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    animation: fadeout 2s forwards;
+}
+
+@keyframes fadeout {
+    0% {
+        top: 0;
+        left: 0;
+      }
+      30% {
+        top: 50px;
+      }
+      68%,
+      72% {
+        left: 50px;
+      }
+      100% {
+        top: 100px;
+        left: 100%;
+      }
+}

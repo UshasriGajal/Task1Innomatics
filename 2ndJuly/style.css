@@ -1,0 +1,74 @@
+.circle{
+    height: 100px;
+    width: 100px;
+    border: 16px solid blue;
+    border-top: 16px solid pink;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+.square{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+}
+.incircle{
+    position: relative;
+    top: 20%;
+    left: 20%;
+    height: 100px;
+    width: 100px;
+    border: 2px solid red;
+    border-radius: 50%;
+
+}
+.car{
+    height: 500px;
+}
+.carousel-item{
+    height: 500px;
+    width: 300px;
+    border: 2px solid black;
+}
+.carousel-item img{
+    position: absolute;
+    gap: 50px;
+    height: 400px;
+    width: 500px;
+    object-fit: cover;
+}
+.toastContainer{
+    height: 70px;
+    width: 410px;
+    position: absolute;
+    left: 35%;;
+    /* border: 1px solid black; */
+}
+.toastItem{
+    height: 60px;
+    width: 400px;
+    
+    /* position: fixed;
+    z-index: 1; */
+    position: fixed; 
+    bottom: 25px; 
+    /* bottom: 10px; */
+    background-color: green;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+.toastItem>p{
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

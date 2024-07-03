@@ -1,0 +1,29 @@
+.mail{
+    display: flex;
+}
+#username{
+    width: 400px;
+    height: 40px;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-top-right-radius: 0 ;
+    border: 1px solid gray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.example{
+    height: 40px;
+    width: 120px;
+    margin-top: 5px;
+    text-align: center;
+    background-color: rgb(229, 226, 226);
+    border: 1px solid gray;
+}
+.side{
+    max-width: 200px;
+    height: 500px;
+}
+/* .footer{
+    position: sticky;
+    bottom: 0;
+} */
