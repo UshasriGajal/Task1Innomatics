@@ -1,0 +1,162 @@
+body{
+ margin: 0;
+
+}
+.buttons{
+    display: flex;
+    color: white;
+    height: 100px;
+    
+    /* border: 2px solid white; */
+}
+.navbar{
+    background-color: transparent;
+    width: 100%;
+    color: white;
+    /* border: 1px solid white; */
+}
+.btn{
+    background-color: transparent;
+    /* border: none; */
+    color: white;
+}
+.app{
+    position: relative;
+    left: 0%;
+    color: white;
+    font-size: 10px;
+    /* border: 2px solid white */
+}
+.invest{
+    
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    font-size: 17px;
+    width:fit-content;
+    color: white;
+    
+}
+.rest{
+    top: 30%;
+    position: absolute;
+    right: 15%;
+    font-size: 17px;
+    color: white;
+}
+.drop{
+    top: 30%;
+    position: absolute;
+    right: 0%;
+    /* border: 1px solid white; */
+    /* right: 10%; */
+}
+.jumbotron{
+    color: white;
+    margin-top: 0px;
+    min-height: 400px;
+    background-image: url("https://bsmedia.business-standard.com/_media/bs/img/article/2023-09/14/full/1694673859-4182.jpeg?im=FeatureCrop,size=(826,465)");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Zomato{
+    position: absolute;
+    left: 37%;
+    height: 70px;
+    width: 300px;
+}
+h3{
+    height: 200px;
+    position: absolute;
+    font-weight: bolder;
+    font-style: italic;
+    top: 30%;
+    left: 20%;
+}
+.loc{
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+.location{
+    
+    height: 50px;
+    /* width: 750px; */
+    
+    background-color: white;
+    border: 1px solid white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+}
+.location>div>button{
+    margin-top: 5px;
+    width: 200px;
+    color: gray;
+    /* border: 1px solid black; */
+}
+
+.location>div>img{
+    margin-top: 5px;
+    color: gray;
+}
+input{
+    border: none
+}
+.search{
+    height: 50px;
+    background-color: white;
+    display: flex;
+    /* border-left: 1px solid gray; */
+    /* border: length 5px; */
+    /* margin:5px ; */
+    width: 500px;
+    /* border: ; */
+}
+.search>div{
+    height: 50px;
+}
+.search>img{
+    margin-top: 5px;
+    margin-left: 10px;
+    border: none;
+}
+section{
+    margin-left: 5%;
+}
+.cards{
+    display: flex;
+    /* margin-left: 90px; */
+    margin-right: 30px;
+    margin-top: 50px;
+}
+.card{
+    flex-grow: 1;
+    margin-right: 20px;
+}
+.card>img{
+    height: 200px;
+}
+h1{
+    /* margin-left: 8%; */
+    margin-top: 30px;
+}
+.Collection{
+
+    position: relative;
+    top: 50px;
+}
+.Collection>div{
+    display: flex;
+    /* margin-left: 8%; */
+}
+.Collection>button{
+    color: red;
+    margin-left: 5%;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    /* margin-left: 8%; */
+}
