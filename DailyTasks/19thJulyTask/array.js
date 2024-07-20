@@ -56,9 +56,9 @@ console.log(Person)
 //     age: 21,
 //     address: { street: 'Vani nagar', City: 'Tirupati', Zipcode: 517501 }
 //   }
-console.log(Person.address.City)
+console.log(Person.address.City) // o/p Tirupati
 
 let greet=(name)=>{
     return `Hello ${name}`
 }
-console.log(greet("Ushasri"))
+console.log(greet("Ushasri")) // o/p Hello Ushasri
