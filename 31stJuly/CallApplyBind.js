@@ -38,22 +38,19 @@ let NewData ={
     gender:true,
     address:{
         pincode:597501,
-        landmark:[area={ 
-            chittor:"Tirupati",
-            kadapa:"pulivendula",
-            },'place','city'],
+        landmark:[area={ chittor:"Tirupati",kadapa:"pulivendula"},'place','city'],
     },
     email:'ushasrigajal@gmail.com'
 }
 
-function updateData(){
+function updateData(OldData,NewData){
     for(var key in OldData,NewData){
         if(typeof(OldData[key])=='object'){
             if(Array.isArray(OldData[key])){
                 OldData[key] = [...new Set([...OldData[key],...NewData[key]])]
             }
             else{
-                OldData[key] = {...OldData[key],...NewData[key]}
+                updateData(OldData[key],NewData[key])
             }
             
         }

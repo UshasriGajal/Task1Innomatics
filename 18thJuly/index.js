@@ -1,15 +1,20 @@
 // function parent(){
 //     let a=10
 //     function child1(){
-//         console.log("a",a)
+//         var b=20
+//         console.log(b,a)
+//         return b
 //     }
-//     child1() //we should only can the function in its parent function only
+   
+//    var ele= child1() //we should only can the function in its parent function only
+//     return ele
 // }
-// parent()
+// var resul=parent()
+// console.log(resul)
 
 // // encapsulation
 // function abc(){
-//     return function(){
+//     return function(){ //closure
 //         return "usha"
 //     }
 // }
@@ -40,7 +45,7 @@
 //     setTimeout(function(){
 //         console.log(i)
 //     },1000)
-// }
+// } 
 
 // for(let i=0;i<5;i++){
 //     setTimeout(function(){
@@ -70,39 +75,39 @@
 // }
 // call(xyz) // calling the function
 
-function fun1(number,cb){
-    number=number*2
-    cb(number)
-}
-fun1(10,(input)=>{
-    console.log(input)
-})
+// function fun1(number,cb){
+//     number=number*2
+//     cb(number)
+// }
+// fun1(10,(input)=>{
+//     console.log(input)
+// })
 
-function fun2(number,cb){
-    number=number*2
-    cb(number)
-}
-var sum = function(input){
-    console.log(input)
-}
-fun2(10,sum)
+// function fun2(number,cb){
+//     number=number*2
+//     cb(number)
+// }
+// var sum = function(input){
+//     console.log(input)
+// }
+// fun2(10,sum)
 
 
-function add(func){
-    return ()=>{
-        let a =func(10)
-        return a+30
-    }
-}
+// function add(func){
+//     return ()=>{
+//         let a =func(10)
+//         return a+30
+//     }
+// }
 
-const multi= (b)=>{
-    return b*2
-}
-const mod = (d)=>{
-    return d%2
-}
-console.log(add(multi)())
-console.log(add(mod)())
+// const multi= (b)=>{
+//     return b*2
+// }
+// const mod = (d)=>{
+//     return d%2
+// }
+// console.log(add(multi)())
+// console.log(add(mod)())
 
 
 // (function(){
@@ -112,11 +117,11 @@ console.log(add(mod)())
 //     console.log(number)
 // })(10)
 
-recurssiongit 
-function print(number){
-    console.log(number)
-    if(number!==10){
-        print(number+1)
-    }
-}
-print(1)
+// recurssiongit 
+// function print(number){
+//     console.log(number)
+//     if(number!==10){
+//         print(number+1)
+//     }
+// }
+// print(1)

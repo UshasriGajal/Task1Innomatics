@@ -59,6 +59,9 @@ let student = [
     },
     
 ]
+
+// console.log(student[0].)
+
 // student.forEach((item,index)=>console.log(item,index))
 // student.forEach((itrtr,index)=>{
     // console.log(`At index${index} we have ${itrtr}`)
@@ -90,37 +93,51 @@ let student = [
 //     // if(index)
     
 // })
-// console.log(student)
-let newStd=student.map((itrtr,index)=>{
-    let updateit=JSON.parse(JSON.stringify(itrtr)) //Deep copy is taking place here
-    if(updateit.name=='UshaSri'){
-        updateit.supplies.push('DBMS')
-    }
-    if(index==1){
-        updateit.supplies.unshift('Html')
-    }
-    if(index == 2){
-        updateit.supplies.splice(1,'ds')
-    }
-    if(index == 3){
-        updateit.supplies.splice(1,1,'physics')
-    }
-    if(index == 4){
-        updateit.supplies.shift()
-        updateit.supplies.pop()
-    }
-    return updateit
-    // if(index)
+
+
+// let newStd=student.map((itrtr)=>{
+//     let updateit=JSON.parse(JSON.stringify(itrtr)) //Deep copy is taking place here
+//     if(updateit.name=='UshaSri'){
+//         updateit.supplies.push('DBMS')
+//     }
+//     if(index==1){
+//         updateit.supplies.unshift('Html')
+//     }
+//     if(index == 2){
+//         updateit.supplies.splice(1,'ds')
+//     }
+//     if(index == 3){
+//         updateit.supplies.splice(1,1,'physics')
+//     }
+//     if(index == 4){
+//         updateit.supplies.shift()
+//         updateit.supplies.pop()
+//     }
+//     return updateit
+//     // if(index)
     
-})
-console.log('old',student)
-console.log('new',newStd)
-let arr=[1,2,3,4]
-let arr1=arr.map((i)=>{
-    i=i*2
-    return i
-})
+// })
+// console.log('old',student)
+// console.log('new',newStd)
+// let arr=[1,2,3,4]
+// let arr1=arr.map((i)=>{
+//     i=i*2
+//     return i
+// })
 
 
     
-console.log(arr)
+// console.log(arr)
+// console.log(student[0])
+let array1 = new Array(30).fill(1).map((iter,index)=>index+1)
+
+let array = new Array(30).fill(1).map((iter,index)=>{
+    return index+1
+})
+let summ = array.reduce((acc,iter)=>iter%2===0? acc=acc+iter:acc,0)
+let summ1 = array.reduce((acc,iter)=>{
+    if(iter%2===0)
+        return acc=acc+iter
+    return acc},0)
+// console.log(array)
+console.log(summ1)
